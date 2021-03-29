@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".activities.Language_Selection_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_dark_green"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/my_value_16"
+        android:paddingTop="@dimen/my_value_14"
+        android:paddingRight="@dimen/my_value_16"
+        android:paddingBottom="@dimen/my_value_10"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/my_value_24"
+                android:layout_height="@dimen/my_value_24"
+                android:background="@drawable/ic_white_back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_value_16"
+                android:fontFamily="@font/l_regular"
+                android:gravity="center"
+                android:text="IMAGES and DETAILS"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/my_value_18" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="fitXY">
+
+                    </com.daimajia.slider.library.SliderLayout>
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/custom_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/my_value_10"
+                        android:gravity="center"
+
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_value_24"
+                android:layout_marginTop="@dimen/my_value_12"
+                android:layout_marginRight="@dimen/my_value_24"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingBottom="@dimen/my_value_5"
+                    android:paddingTop="@dimen/my_value_5"
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/l_regular"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adi pi scing elit, sed do eiusmod tempor incididunt "
+                    android:textColor="@color/color_dark_green"
+                    android:textSize="@dimen/my_value_20" />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my_value_5"
+                    android:fontFamily="@font/l_italic"
+                    android:text="11 Dec 2019"
+                    android:textColor="@color/color_dark_green"
+                    android:textSize="@dimen/my_value_14" />
+
+                <TextView
+                    android:paddingBottom="@dimen/my_value_5"
+                    android:paddingTop="@dimen/my_value_5"
+                    android:id="@+id/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my_value_24"
+                    android:fontFamily="@font/l_regular"
+                    android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt.
+ Culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+Omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt.
+ Culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+Omnis dolor repellendus. Temporibus autem"
+                    android:textColor="@color/color_dark_green"
+                    android:textSize="@dimen/my_value_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_value_24"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_previous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="@dimen/my_value_10"
+                    android:layout_marginRight="@dimen/my_value_80"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_white"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/my_value_8">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/my_value_24"
+                        android:layout_height="@dimen/my_value_18"
+                        android:src="@drawable/ic_left_arrow" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/my_value_5"
+                        android:fontFamily="@font/l_regular"
+                        android:gravity="left|center"
+                        android:text="PREV"
+                        android:textColor="@color/color_header"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="@dimen/my_value_80"
+                    android:layout_marginRight="@dimen/my_value_14"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_white"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/my_value_8">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/l_regular"
+                        android:text="NEXT"
+                        android:textColor="@color/color_header"
+                        android:textSize="@dimen/my_value_14" />
+
+                    <ImageView
+
+                        android:layout_width="@dimen/my_value_24"
+                        android:layout_height="@dimen/my_value_18"
+                        android:src="@drawable/ic_right_arrows" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_recent_updates"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/my_value_16"
+                android:layout_marginTop="@dimen/my_value_18"
+                android:layout_marginBottom="@dimen/my_value_10"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

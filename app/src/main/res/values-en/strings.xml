@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nammaguru_Palanisamigal</string>
+    <string name="language"> English</string>
+    <string name="select_language">Choose your preferred language</string>
+    <string name="go">GO</string>
+
+    <string name="examplecontent">Om Sri Chakkur Palanisamy Swamis \n
+Help out!</string>
+    <string name="recentupdates">Recent Updates</string>
+    <string name="upcomingevents">Upcoming Events</string>
+    <string name="gallery">Gallery</string>
+    <string name="events">Events</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="author">-Om Sri Chakkur Palanisamy</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Nammaguru_Palanisamigal</string>
+    <string name="language"> English</string>
+    <string name="select_language">Choose your preferred language</string>
+    <string name="go">GO</string>
+    <string name="examplecontent">ஓம் ஸ்ரீ சற்குறு  பழனிசாமி  சுவாமிகள்\n
+வழிக்கு  துணையாய் !</string>
+    <string name="recentupdates">Recent Updates</string>
+    <string name="upcomingevents">Upcoming Events</string>
+    <string name="gallery">Gallery</string>
+    <string name="events">Events</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+
+    <string name="author">-ஓம் ஸ்ரீ சற்குறு  பழனிசாமி</string>
+</resources>
