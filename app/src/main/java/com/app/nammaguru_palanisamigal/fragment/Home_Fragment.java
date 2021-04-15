@@ -35,10 +35,11 @@ import com.app.nammaguru_palanisamigal.model.Banner_Model;
 import com.app.nammaguru_palanisamigal.model.Upcoming_List_Model;
 import com.app.nammaguru_palanisamigal.model.Upcoming_model;
 import com.app.nammaguru_palanisamigal.notification.MyFirebaseMessagingService;
-import com.daimajia.slider.library.Indicators.PagerIndicator;
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.glide.slider.library.SliderLayout;
+import com.glide.slider.library.indicators.PagerIndicator;
+import com.glide.slider.library.slidertypes.BaseSliderView;
+import com.glide.slider.library.slidertypes.TextSliderView;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +51,16 @@ import io.reactivex.schedulers.Schedulers;
 
 public class Home_Fragment extends Fragment {
 
-    private View view;    private String str_language;    private SliderLayout slider;    private RecyclerView recycler_recent_updates;    private Recent_Update_Adapter recent_update_adapter;    private Upcoming_Events_Adapters upcoming_events;    private RecyclerView recycler_upcoming_events;    private LinearLayout layout_recent;    private LinearLayout layout_upcoming;    private LinearLayout layout_visible;
+    private View view;
+    private String str_language;
+    private SliderLayout slider;
+    private RecyclerView recycler_recent_updates;
+    private Recent_Update_Adapter recent_update_adapter;
+    private Upcoming_Events_Adapters upcoming_events;
+    private RecyclerView recycler_upcoming_events;
+    private LinearLayout layout_recent;
+    private LinearLayout layout_upcoming;
+    private LinearLayout layout_visible;
 
     private List<Upcoming_List_Model> upcoming_list_models;
 
@@ -61,8 +71,7 @@ public class Home_Fragment extends Fragment {
     List<Banner_List_Model> banner_list_models;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
-    {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         str_language = getDefaults("Language", getActivity());
         setAppLocale(str_language);
@@ -139,9 +148,7 @@ public class Home_Fragment extends Fragment {
 
             TextSliderView textSliderView = new TextSliderView(getActivity());
             textSliderView
-                    .image(banner_list_models.get(i).getUrl())
-                    .error(R.drawable.ic_placeholder_story)
-                    .setScaleType(BaseSliderView.ScaleType.CenterCrop);
+                    .image(banner_list_models.get(i).getUrl());
 
             slider.addSlider(textSliderView);
 
@@ -167,7 +174,7 @@ public class Home_Fragment extends Fragment {
 
                         if (value.getStatus() == 1) {
                             banner_list_models = value.getData();
-                            Log.d("sdfsefsafaASGD",banner_list_models.toString());
+                            Log.d("sdfsefsafaASGD", banner_list_models.toString());
                             sliderData(banner_list_models);
 
                             recentAdapterLoad();

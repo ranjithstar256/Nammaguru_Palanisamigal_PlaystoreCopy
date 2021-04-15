@@ -70,23 +70,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.daimajia.slider.library.SliderLayout
+                    <com.glide.slider.library.SliderLayout
                         android:id="@+id/slider"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
-                        android:scaleType="fitXY">
+                        android:background="@drawable/guru_image1"
+                        android:scaleType="fitXY"/>
 
-                    </com.daimajia.slider.library.SliderLayout>
-
-                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                    <com.glide.slider.library.indicators.PagerIndicator
                         android:id="@+id/custom_indicator"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_marginBottom="@dimen/my_value_10"
-                        android:gravity="center"
-
-                        />
+                        android:gravity="center"/>
                 </FrameLayout>
             </LinearLayout>
 

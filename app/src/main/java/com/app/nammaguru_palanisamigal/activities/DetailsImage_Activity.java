@@ -20,10 +20,11 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.daimajia.slider.library.Indicators.PagerIndicator;
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.glide.slider.library.SliderLayout;
+import com.glide.slider.library.indicators.PagerIndicator;
+import com.glide.slider.library.slidertypes.BaseSliderView;
+import com.glide.slider.library.slidertypes.TextSliderView;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -114,10 +115,10 @@ public class DetailsImage_Activity extends AppCompatActivity implements View.OnC
 
             TextSliderView textSliderView = new TextSliderView(DetailsImage_Activity.this);
             textSliderView
-                    .image(image[i])
-                    //.image(banner_list_models.get(i))
-                    .error(R.drawable.ic_placeholder_story)
-                    .setScaleType(BaseSliderView.ScaleType.CenterCrop);
+                    .image(image[i]);
+            //.image(banner_list_models.get(i))
+//                    .error(R.drawable.ic_placeholder_story)
+//                    .setScaleType(BaseSliderView.ScaleType.CenterCrop);
 
             slider.addSlider(textSliderView);
 
